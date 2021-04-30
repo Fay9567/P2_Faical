@@ -1,0 +1,297 @@
+
+body{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+header
+{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+nav li
+{
+    margin-right: 30px;
+}
+nav a
+{
+    margin-left: 80px;
+    padding-top: 20px;
+    
+}   
+nav a:hover
+{
+    border-top: blue solid 2px;
+    padding-left: 12px;
+    padding-right:12px;
+}  
+.cherch_marseille{
+    font-size:12px ;
+    padding: 10px;
+    font-weight: bolder;
+    border: #F2F2F2 solid 1px;
+}  
+ .soumettre{
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 12px;
+    padding: 10px;
+    padding-right: 15px;
+    background-color: blue;
+    border:#F2F2F2; 
+ }
+ .marge_ville
+ {
+    margin-left: 2%;
+ }
+ .filtres {
+    display: flex;
+    font-weight: bolder;
+    list-style-type: none;
+ }
+ .choix_filtre 
+ {  list-style-type: none;
+    padding: 30px;
+    margin-right: 10px;
+ }
+ .element_filtre {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    padding-right: 15x;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    border-radius:20px;
+}
+   .fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog{
+    color: blue;
+    border-radius: 100%;
+    padding: 14px;
+    background-color:#bfd4ec;  
+}
+.glob_filtres
+{
+    display: flex;
+    align-items: center;
+}
+.fa-info
+{
+    color: blue;
+    font-size: 13px;
+    padding-bottom:7px;
+    padding-top:7px; 
+    padding-right:10px;
+    padding-left: 10px;
+    border: #F2F2F2 solid 1px;
+    border-radius: 100%;
+}
+
+/* Main */
+ 
+.heb_marseille {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.heb_marseille  h3 
+{
+    margin: 1%;
+}
+
+.heb_marseille p
+{
+    margin: 1%;
+}
+
+/* Section Hebergement Marseille */
+
+.heberg_cont
+{
+    width: 60%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+#hebergement
+{
+    margin-left: 30px;
+    font-size: 22px
+}
+.heb_enf
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.heb_enf_zen
+{
+    margin-bottom: 2%;
+    background-color: white;
+    border-radius: 20px;
+    width: 28%;
+}
+.emarg_heberg
+{
+    margin: 2%;
+}
+.image_heberg
+{
+    width: 100%;
+    height: 130px;
+    border-radius: 15px;
+}
+.legende p, h3
+{
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.combien
+{
+    font-weight: bold; 
+}
+/* etoiles */
+
+.etoiles
+{
+    display: flex;
+    margin-left: 2%;
+    padding-bottom: 2%;
+ }
+ .desetoiles
+ {
+    color: blue;
+    font-size: 14px;
+    margin-left: 2px;
+ }
+ .nonetoiles{
+    margin-left: 2px;
+    font-size: 14px;
+    color: #F2F2F2;
+}
+
+/*  section Les plus populaires */
+
+.popul_cont
+{
+    width: 32%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+.popul_cont h2{
+    padding-left:5%;
+}
+ 
+.image_popul
+{
+    margin: 1.2%;
+    margin-left: 0.6%;
+    border-radius: 10px 0px 0px 10px;
+    width: 34%;
+    height: 155px;
+}
+
+.emarg_Popul
+{
+    display: flex;
+    margin: 4px;
+}
+.pop_enf_zen
+{
+    border-radius: 10px;
+    margin: 4%;
+    background-color: white;
+    width:90%;
+}
+.pop_enf_zen:hover
+{
+    box-shadow:5px 5px 7px 0px #989898;
+}
+.legende_p
+{
+    padding-top: 2%;
+    padding-left: 4%;
+}
+/** Activités **************************************/
+
+.activ_cont
+ {
+    width: 75%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+ }
+#activites
+{   
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.activ
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20%;  
+}
+.activit_enf
+{
+    width: 22%;
+    border-radius: 15px;
+    margin: 12px;   
+}
+
+.emarg_activ
+{
+    margin-top: 0%;
+    margin-left: 0px;
+    margin-right:0px;
+    box-shadow: 1px 1px 1px  #F2F2F2;
+    border-radius: 15px;
+}
+.emarg_activ:hover
+{
+    box-shadow:5px 5px 7px 0px #989898; 
+}
+.emarg_activ h3
+{
+    padding-left: 5%;
+    padding-bottom: 3%;   
+}
+/* Images des activités ***************************/
+
+.image_activ
+{
+    width: 100%;
+    height: 460px;
+    border-radius: 15px 15px 0px 0px;
+    margin-right: 0%;
+}
+.image_activ_0
+{
+    width: 100%;
+    height: 225px;
+    border-radius: 15px 15px 0px 0px;
+}
+.image_activ_1
+{
+    width: 100%;
+    height: 160px;
+    border-radius: 15px 15px 0px 0px;
+}
+.image_activ_2
+{
+    width: 100%;
+    height: 192px;
+    border-radius: 15px 15px 0px 0px;
+}
