@@ -1,6 +1,18 @@
-body{
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
+
+
+a:link 
+{
+    text-decoration:none;   
+}
+a:hover 
+{   
+    color: blue; 
+}
+
+body
+{
+    width: 100%; 
+    font-family: 'Raleway', sans-serif;   
 }
 /*  Header **********/
 #logo
@@ -108,7 +120,7 @@ nav ul a
 {
     color: blue;
     border-radius: 100%;
-    padding: 10px;
+    padding: 14px;
     background-color:#bfd4ec; 
 }
 
@@ -412,11 +424,12 @@ nav ul a
 {
 body
 {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     overflow-wrap: break-word;
+    font-size: 10px;
 }
 
 .header
@@ -426,11 +439,11 @@ body
 
 #Logo 
 {
-    min-width: 50%;  
+    /*min-*/width: 85%;  
 }
 nav
 {
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/ 
     display: flex;  
 }
 
@@ -444,14 +457,14 @@ nav ul
 nav a
 {
     margin-left: 0%;
-    display:block;
+    display:inline-block /*block;*/
     justify-content:space-evenly;
 }
 
 .glob_filtres
 {
 
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     text-align: left;
 }
@@ -469,8 +482,30 @@ nav a
 
 .choix_filtres
 {
-    padding: 0px;
+    padding: 20px;
     padding-bottom: 4%;
+}
+.element_filtre 
+ {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: 7x;
+    border: 1px solid #F2F2F2;
+    border-radius:15px;
+    text-decoration-line: none;  
+}
+
+.element_filtre:hover
+{
+    background-color:cornflowerblue ;
+}
+
+.fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog
+{
+    color: green;
+    border-radius: 80%;
+    padding: 3px;
+    background-color:aquamarine; 
 }
 
 .f_info
@@ -480,7 +515,7 @@ nav a
 
 .heb_marseille
 {
-    flex-direction: column-reverse;
+    /*flex-direction: column-reverse;*/
     width: 100%;   
 }
 
