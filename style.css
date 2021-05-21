@@ -14,17 +14,19 @@ body
     width: 100%; 
     font-family: 'Raleway', sans-serif;   
 }
+
 /*  Header **********/
-#logo
-{
-    height: 80px;
-}
 
 header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#logo
+{
+    height: 80px;
 }
 
 nav ul
@@ -40,18 +42,13 @@ nav ul li
     padding-top: 20px;
 }
 
-/*nav ul a
-{
-    text-decoration-line: none;
-}
-*/
 .navheb
 {
     color: blue;
     border-top: blue solid 2px;
-    padding-left: 7px;
-    padding-right:7px;
-    padding-top: 12px;
+    padding-left: 9px;
+    padding-right:9px;
+    padding-top: 15px;
     text-decoration-line: none;
 }
 
@@ -65,12 +62,20 @@ nav ul li
     color: blue;
 }
 
-.cherch_marseille{
-    font-size:12px ;
-    padding: 10px;
-    font-weight: bolder;
-    border: #F2F2F2 solid 1px;
-}  
+/**********  Section trouv_vacances  **********/
+
+.trouv_vacances
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mask
+{ 
+    display: flex;
+    flex-direction: row;
+    width: 50%; 
+}
 
 .h1marge
 {
@@ -78,22 +83,41 @@ nav ul li
     padding-top: 0px;
 }
 
+.marge_vill
+{
+    margin-left: 0%;
+    margin-top: 0px;
+}
+
+.fa-map-marker-alt
+{
+    color:black;
+    border-radius: 15px 0px 0px 15px;
+    padding: 12px;
+    background-color:#bfd4ec; 
+}
+
+.cherch_marseille
+{
+    font-size:15px ;
+    padding: 12px;
+    padding-left: 15px;
+    font-weight: bolder;
+    border: #F2F2F2 solid 1px;
+}  
+
 .soumettre
 {
     color: white;
     border-radius: 0px 15px 15px 0px;
     font-size: 12px;
-    padding: 10px;
+    padding: 12px;
     padding-right: 15px;
     background-color: blue;
     border:#F2F2F2; 
 }
 
- .marge_vill
- {
-    margin-left: 0%;
-    margin-top: 0px;
- }
+
 
  .filtres 
  {
