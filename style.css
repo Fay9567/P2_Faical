@@ -470,7 +470,7 @@ nav ul
 nav a
 {
     margin-left: 0%;
-    display:inline-block /*block;*/
+    display:inline-block ;/*block;*/
     justify-content:space-evenly;
 }
 
