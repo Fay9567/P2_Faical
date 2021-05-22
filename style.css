@@ -117,36 +117,47 @@ nav ul li
     border:#F2F2F2; 
 }
 
-
+.glob_filtres
+{
+    display: flex;
+    align-items: center;
+}
 
  .filtres 
  {
     display: flex;
+    flex-direction: row;
+    width:  80%;
     font-weight: bolder;
     list-style-type: none;
  }
 
  .choix_filtre 
- {  
+
+ {  display: flex;
+    flex-direction: row;
     list-style-type: none;
-    padding: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius:25px;
+    /*padding: px;*/
     margin-right: 10px;
  }
 
  .element_filtre 
  {
-    padding-bottom: 13px;
-    padding-top: 13px;
-    padding-right: 15x;
-    border: 3px solid #F2F2F2;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-right: 11x;
+    padding-left: 11px;
+    border: 2px solid #F2F2F2;
     border-left: none;
-    border-radius:40px;
+    border-radius:25px;
     text-decoration-line: none;  
 }
 
-.element_filtre:hover
+.choix_filtre:hover
 {
-    background-color:gold;
+    background-color:linen;
 }
 
 .fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog
@@ -154,14 +165,10 @@ nav ul li
     color: blue;
     border-radius: 100%;
     padding: 14px;
-    background-color:#bfd4ec; 
+    background-color:#51d3f3ec; 
 }
 
-.glob_filtres
-{
-    display: flex;
-    align-items: center;
-}
+
 
 .fa-info
 {
@@ -455,16 +462,58 @@ nav ul li
 /* version responsive */
 @media screen and (max-width:680px)
 {
- glob_filtres
+
+.header
+{   
+    display: flex;
+    flex-direction: row;
+} 
+
+#Logo 
+{
+    min-width: 85%; 
+}
+nav
+{ 
+   display: flex;  
+   flex-direction: row-reverse;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+
+/*nav a
+{
+    margin-left: 0%;
+    display:inline-block ;/*block;*/
+ /*   justify-content:space-evenly;
+}
+
+.glob_filtres
 {
 
-    display:block;
-    flex-wrap: wrap;
+    display:flex;
+    flex-direction: column;
     text-align: left;
+    align-items: flex-start;
 
 }
+.filtres
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    /*font-size: 20px;*/
+    /*margin-left: 1%;*/
 }
-@media screen and (max-width:480px)
+
+}
+/*@media screen and (max-width:480px)
 {
 body
 {
@@ -476,34 +525,9 @@ body
     font-size: 10px;
 }
 
-.header
-{   
-    display: flex;
-} 
 
-#Logo 
-{
-    /*min-*/width: 85%;  
-}
-nav
-{
-    /*flex-direction: row-reverse;*/ 
-    display: flex;  
-}
 
-nav ul
-{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;   
-}
 
-nav a
-{
-    margin-left: 0%;
-    display:inline-block ;/*block;*/
-    justify-content:space-evenly;
-}
 
 .glob_filtres
 {
@@ -560,7 +584,7 @@ nav a
 .heb_marseille
 {
     /*flex-direction: column-reverse;*/
-    width: 100%;   
+ /*   width: 100%;   
 }
 
 .heberg_cont
@@ -615,4 +639,4 @@ nav a
     flex-wrap: wrap;
 }
 
-}
+} */
