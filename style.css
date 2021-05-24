@@ -1,5 +1,4 @@
 
-
 a:link 
 {
     text-decoration:none;   
@@ -20,26 +19,34 @@ body
 header
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 #logo
 {
-    height: 80px;
+    height: 20px;
+}
+
+nav
+{
+
 }
 
 nav ul
 {
     display: flex;
+    padding-left: 2px;
     list-style-type:none;
 }
 
 nav ul li
 {
-    margin-left: 100px;
-    margin-right: 20px;
-    padding-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 30px;
+    text-align:start;
 }
 
 .navheb
@@ -81,6 +88,7 @@ nav ul li
 {
     padding-bottom: 0px;
     padding-top: 0px;
+    font-size: 20px;
 }
 
 .marge_vill
@@ -120,6 +128,7 @@ nav ul li
 .glob_filtres
 {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -127,7 +136,16 @@ nav ul li
  {
     display: flex;
     flex-direction: row;
-    width:  80%;
+   /* width:  80%; */
+    font-weight: bolder;
+    list-style-type: none;
+ }
+
+ .filtres_1
+ {
+    display: flex;
+    flex-direction: row;
+    /*width:  80%;*/
     font-weight: bolder;
     list-style-type: none;
  }
@@ -149,7 +167,6 @@ nav ul li
     padding-top: 9px;
     padding-right: 11x;
     padding-left: 11px;
-    border: 2px solid #F2F2F2;
     border-left: none;
     border-radius:25px;
     text-decoration-line: none;  
@@ -182,11 +199,25 @@ nav ul li
     border-radius: 100%;
 }
 
-/* Main */
+/* Main : Les plus populaires + Hebergements à Marseille */
+
 .heb_marseille 
 {
     display:flex;
+    flex-direction: row;
     justify-content: space-around;    
+}
+.ligne1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ligne2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .heb_marseille  h3 
@@ -197,6 +228,7 @@ nav ul li
 .heb_marseille p
 {
     margin: 1%;
+    height: auto;
 }
 
 /* Section Hebergement Marseille */
@@ -210,7 +242,7 @@ nav ul li
 #hebergement
 {
     margin-left: 20px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .heb_enf
@@ -222,6 +254,8 @@ nav ul li
 
 .heb_enf_zen
 {
+    display: flex;
+    flex-direction: column;
     width: 29%;
     margin-bottom:2%;
     background-color: white;
@@ -235,6 +269,8 @@ nav ul li
 
 .emarg_heberg
 {
+    display: flex;
+    flex-direction: column;
     margin: 2%;
 }
 
@@ -282,9 +318,10 @@ nav ul li
 .popul_cont
 {
     display:flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content:space-around;
     background-color: #F2F2F2;
-    width: 450px;
+    width:450px;
     border-radius: 15px;   
     height: auto;  
 }
@@ -322,7 +359,19 @@ nav ul li
 
 .emarg_Popul
 {
-    margin: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+
+    /*margin-left: 2px;
+    margin-right: 2px;*/
+}
+
+.pop_enf
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .pop_enf_zen
@@ -460,7 +509,7 @@ nav ul li
 }
 
 /* version responsive */
-@media screen and (max-width:680px)
+@media screen and (max-width:480px)
 {
 
 .header
@@ -471,27 +520,30 @@ nav ul li
 
 #Logo 
 {
-    min-width: 85%; 
+    height: 50px;
 }
+
 nav
 { 
    display: flex;  
-   flex-direction: row-reverse;
+   flex-direction: row;
+   text-align: left;
 }
 
 nav ul
 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;   
 }
 
-/*nav a
+.navheb
 {
-    margin-left: 0%;
-    display:inline-block ;/*block;*/
- /*   justify-content:space-evenly;
+    padding-left: 0px;
+    border-top:hidden;
 }
+
 
 .glob_filtres
 {
@@ -505,12 +557,66 @@ nav ul
 .filtres
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    /*font-size: 20px;*/
-    /*margin-left: 1%;*/
+    
 }
+
+.filtres_1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*justify-content: space-between;*/
+    
+}
+.heb_marseille
+{
+    display: flex;
+    flex-direction:column-reverse;
+    width: 100%;   
+}
+
+.heberg_cont
+{
+    width: 100%;
+    /*display: flex;
+    flex-wrap: wrap;
+    background-color: white;*/
+}
+.ligne1
+{
+    display: flex;
+    flex-direction: column;
+    /*width: 100%;*/
+}
+.ligne2
+{
+    display: flex;
+    flex-direction: column;
+}
+.heb_enf_zen
+{
+    width: 300px;
+}
+
+.pop_enf_zen
+{
+    margin-left: 1%;
+}
+
+/*.emarg_heberg
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.legende
+{
+    display: flex;
+    flex-direction:column;
+}*/
 
 }
 /*@media screen and (max-width:480px)
@@ -526,43 +632,11 @@ body
 }
 
 
-
-
-
-.glob_filtres
-{
-
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.glob_filtres h2{
-    font-size: 20px;
-    margin-left: 12%;
-}
-
-.filtres
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .choix_filtres
 {
     padding: 20px;
     padding-bottom: 4%;
 }
-.element_filtre 
- {
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-right: 7x;
-    border: 1px solid #F2F2F2;
-    border-radius:15px;
-    text-decoration-line: none;  
-}
-
 .element_filtre:hover
 {
     background-color:cornflowerblue ;
@@ -581,19 +655,9 @@ body
     width: 75%;  
 }
 
-.heb_marseille
-{
-    /*flex-direction: column-reverse;*/
- /*   width: 100%;   
-}
 
-.heberg_cont
-{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-}
+
+
 
 .popul_cont{
     width: 100%;
@@ -620,23 +684,19 @@ body
 .activ_enf
 {
     width: 100%;  
-}
+}*/
 .piedpage
 {
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .finpage
 {
-    margin-left: 10%;
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+  /*  margin-left: 10%;
+    width: 100%;*/
 
-} */
+} 
