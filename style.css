@@ -396,7 +396,8 @@ nav ul li
     padding-right: 2%; 
 }
 
-/** Activités **************************************/
+/************** Activités ***************************/
+
 #activites
 {   
     padding-top: 2%;
@@ -479,8 +480,9 @@ nav ul li
 .piedpage
 {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction:row;
+    /*justify-content: space-between;
+    align-items: flex-start;*/
     background-color: #F2F2F2;
 }
 
@@ -606,19 +608,13 @@ nav ul
     margin-left: 1%;
 }
 
-/*.emarg_heberg
+.image_activ, .image_activ_0, .image_activ_1, .image_activ_2
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    max-width: 320;
+    height: 180;
 }
-.legende
-{
-    display: flex;
-    flex-direction:column;
-}*/
 
-}
+
 /*@media screen and (max-width:480px)
 {
 body
@@ -631,55 +627,6 @@ body
     font-size: 10px;
 }
 
-
-.choix_filtres
-{
-    padding: 20px;
-    padding-bottom: 4%;
-}
-.element_filtre:hover
-{
-    background-color:cornflowerblue ;
-}
-
-.fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog
-{
-    color: green;
-    border-radius: 80%;
-    padding: 3px;
-    background-color:aquamarine; 
-}
-
-.f_info
-{
-    width: 75%;  
-}
-
-
-
-
-
-.popul_cont{
-    width: 100%;
-    margin-bottom: 10%;
-}
-
-.fa-chart-line
-{
-    margin-left: 21%;
-}
-
-.activ_cont
-{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.heb_enf_zen
-{
-    width: 100%;  
-}
 
 .activ_enf
 {
@@ -700,3 +647,4 @@ body
     width: 100%;*/
 
 } 
+}
