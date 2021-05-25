@@ -658,7 +658,7 @@ nav ul
 
 .image_activ , .image_activ_0, .image_activ_1, .image_activ_2
 {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
