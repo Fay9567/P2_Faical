@@ -16,14 +16,16 @@ body
 /*  Header **********/
 #logo
 {
-    display: flex;
+    /*display: flex;
     flex-direction:column;
-    align-items: baseline;
+    align-items: baseline;*/
+    height: 20px;
 }
 
 header
 {
 display: flex;
+flex-direction: row;
 justify-content: space-between;
 align-items: center;
 }
@@ -31,23 +33,31 @@ align-items: center;
 nav ul
 {
     display: flex;
+    padding-left: 2px;
     list-style-type:none;
+    justify-content: space-around;
 }
 
-nav ul a
+nav ul li
 {
-    margin-left: 100px;
+   /* margin-left: 100px;
     margin-right: 20px;
     padding-top: 20px;
-    text-decoration-line: none;
+    text-decoration-line: none;*/
+    margin-left: 20px;
+    margin: right 30px;
+    padding-top: 30px;
+    text-align: start;
 }
 
 .navheb
 {
     color: blue;
     border-top: blue solid 2px;
-    padding-left: 7px;
-    padding-right:7px;
+    padding-left: 9px;
+    padding-right:9px;
+    padding-top: 15px;
+    text-decoration-line: none;
 }
 
 .navinsc
@@ -55,65 +65,115 @@ nav ul a
     color: blue;
     font-weight: bolder;
 }
+.activity
+{
+    color: blue;
+}
 
-.cherch_marseille{
-    font-size:12px ;
-    padding: 10px;
-    font-weight: bolder;
-    border: #F2F2F2 solid 1px;
-}  
+/*   Section trouv_vacances  */
+
+.trouv_vacances
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mask
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
 
 .h1marge
 {
     padding-bottom: 0px;
     padding-top: 0px;
+    font-size: 20px;
 }
+
+.marge_vill
+ {
+    margin-left: 0%;
+    margin-top: 0px;
+ }
+
+ .fa-map-marker-alt
+{
+    color: black;
+    padding:15px;
+    border-radius: 12px 0px 0px 12px;
+    background-color:#bfd4ec;    
+}            
+
+.cherch_marseille{
+    font-size:15px ;
+    padding: 12px;
+    padding-left: 15px;
+    font-weight: bolder;
+    border: #F2F2F2 solid 1px;
+}  
 
 .soumettre
 {
     color: white;
     border-radius: 0px 15px 15px 0px;
     font-size: 12px;
-    padding: 10px;
+    padding: 12px;
     padding-right: 15px;
     background-color: blue;
     border:#F2F2F2; 
 }
 
- .marge_vill
- {
-    margin-left: 0%;
-    margin-top: 0px;
- }
+.glob_filtres
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
- .filtres 
+.filtres 
  {
     display: flex;
+    flex-direction: row;
+   /* width:  80%; */
+    font-weight: bolder;
+    list-style-type: none;
+ }
+ .filtres_1
+ {
+    display: flex;
+    flex-direction: row;
+    /*width:  80%;*/
     font-weight: bolder;
     list-style-type: none;
  }
 
  .choix_filtre 
  {  
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
-    padding: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    /*padding: 30px;*/
     margin-right: 10px;
  }
 
  .element_filtre 
  {
-    padding-bottom: 13px;
-    padding-top: 13px;
-    padding-right: 15x;
-    border: 3px solid #F2F2F2;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-right: 11x;
+    padding-left: 11px;
     border-left: none;
-    border-radius:40px;
+    border-radius:25px;
     text-decoration-line: none;  
 }
 
 .element_filtre:hover
 {
-    background-color:gold;
+    background-color:linen;
 }
 
 .fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog
@@ -121,14 +181,10 @@ nav ul a
     color: blue;
     border-radius: 100%;
     padding: 14px;
-    background-color:#bfd4ec; 
+    background-color:#51d3f3ec; 
 }
 
-.glob_filtres
-{
-    display: flex;
-    align-items: center;
-}
+
 
 .fa-info
 {
@@ -142,11 +198,27 @@ nav ul a
     border-radius: 100%;
 }
 
-/* Main */
+/* Main : Les plus populaires + Hebergements à Marseille */
 .heb_marseille 
 {
     display:flex;
-    justify-content: space-around;    
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.ligne1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ligne2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .heb_marseille  h3 
@@ -157,6 +229,7 @@ nav ul a
 .heb_marseille p
 {
     margin: 1%;
+    height: auto;
 }
 
 /* Section Hebergement Marseille */
@@ -164,13 +237,13 @@ nav ul a
 {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 61%;
+    width: 60%;
 }
 
 #hebergement
 {
     margin-left: 20px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .heb_enf
@@ -180,26 +253,18 @@ nav ul a
     justify-content: space-evenly;
 }
 
-.ligne1
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.ligne2
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .heb_enf_zen
 {
+    /*width: 29%;
+    margin-bottom:2%;
+    background-color: white;
+    border-radius: 20px;*/
+    display: flex;
+    flex-direction: column;
     width: 29%;
     margin-bottom:2%;
     background-color: white;
-    border-radius: 20px;   
+    border-radius: 20px;      
 }
 
 .heb_enf_zen:hover
@@ -209,6 +274,8 @@ nav ul a
 
 .emarg_heberg
 {
+    display: flex;
+    flex-direction: column;
     margin: 2%;
 }
 
@@ -259,7 +326,7 @@ nav ul a
     flex-direction: column;
     justify-content:space-between;
     background-color: #F2F2F2;
-    width: 450px;
+    width:36% /*450px*/;
     border-radius: 15px;   
     height: auto;  
 }
@@ -283,21 +350,29 @@ nav ul a
    margin-left: 39%; 
 }
 
+
+.emarg_popul
+{
+    display: flex;   
+    /*flex-direction: column;*/
+    margin: 1%;
+}
+
 .image_popul
 {
     float: left;
-    margin: 2%; 
-    margin-left: 1%;
+    margin-left: 2px;
     border-radius: 10px 0px 0px 10px; 
-    width: 100px;
-    height: 150px;
+    width: 40%;
+    height: 140px;
     padding-left: 0px;
     background-color: white;
 }
-
-.emarg_Popul
+.pop_enf
 {
-    margin: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pop_enf_zen
@@ -305,15 +380,21 @@ nav ul a
     border-radius: 20px;
     margin: 1px;
     background-color:white;
-    width: 390px;
-    height: 162px;
-    margin-left: 30px;
+    width: 420px;
+    height: 150px;
+    margin-left: 15px;
     
 }
 
 .pop_enf_zen:hover
 {
     box-shadow:5px 5px 7px 0px #979797;
+}
+
+.legende_p
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .legende_p h3 
@@ -439,63 +520,86 @@ nav ul a
 {
 body
 {
-    width: 80%;
+   /* width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     overflow-wrap: break-word;
-    font-size: 10px;
+    font-size: 10px; */
 }
 
 .header
 {   
     display: flex;
+    flex-direction: row;
 } 
 
 #Logo 
 {
-    /*min-*/width: 85%;  
+    /*min-width: 85%;  */
+    height: 50px;
 }
 nav
 {
     /*flex-direction: row-reverse;*/ 
     display: flex;  
+    flex-direction: row;
+    text-align: left;
 }
 
 nav ul
 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;   
 }
 
-nav a
+.navheb
+{
+    padding-left: 0px;
+    border-top:hidden;
+}
+/*nav a
 {
     margin-left: 0%;
-    display:inline-block /*block;*/
+    display:inline-block 
     justify-content:space-evenly;
-}
+}*/
 
 .glob_filtres
 {
-
-    display: block;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
 }
 
-.glob_filtres h2{
+/*.glob_filtres h2
+
+{
     font-size: 20px;
     margin-left: 12%;
-}
+}*/
 
 .filtres
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.choix_filtres
+.filtres_1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*justify-content: space-between;*/
+    
+}
+
+/*.choix_filtres
 {
     padding: 20px;
     padding-bottom: 4%;
@@ -513,9 +617,37 @@ nav a
 .element_filtre:hover
 {
     background-color:cornflowerblue ;
+}*/
+.heb_marseille
+{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+}
+.heberg_cont
+{
+    width: 100%;
+}
+.heb_enf
+{
+    justify-content: flex-start;
+}
+.ligne1
+{
+    display: flex;
+    flex-direction: column;
+}
+.ligne2
+{
+    display: flex;
+    flex-direction: column;
 }
 
-.fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog
+.popul_cont{
+    width: 100%;
+    margin-bottom: 10%;
+}
+/*.fa-money-bill-wave, .fa-child,  .fa-heart, .fa-dog
 {
     color: green;
     border-radius: 80%;
@@ -530,11 +662,11 @@ nav a
 
 .heb_marseille
 {
-    /*flex-direction: column-reverse;*/
+    /*flex-direction: column-reverse;
     width: 100%;   
-}
+}*/
 
-.heberg_cont
+/*.heberg_cont
 {
     width: 100%;
     display: flex;
@@ -542,10 +674,7 @@ nav a
     background-color: white;
 }
 
-.popul_cont{
-    width: 100%;
-    margin-bottom: 10%;
-}
+
 
 .fa-chart-line
 {
@@ -557,26 +686,38 @@ nav a
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
+}*/
 
 .heb_enf_zen
 {
-    width: 100%;  
+    width: 300px /*100%*/;  
 }
 
-.activ_enf
+.pop_enf_zen
 {
-    width: 100%;  
+    margin-left: 1%;
 }
-.piedpage
+
+.image_activ , .image_activ_0, .image_activ_1, .image_activ_2
 {
     width: 100%;
+    height: auto;
+}
+
+/*.activ_enf
+{
+    width: 100%;  
+}*/
+.piedpage
+{
+    /*width: 100%;*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.finpage
+/*.finpage
 {
     margin-left: 10%;
     width: 100%;
@@ -584,5 +725,5 @@ nav a
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+}*/
 }
