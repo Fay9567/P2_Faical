@@ -75,6 +75,7 @@ header
 {  
     grid-area: zonav;
     display: flex;
+    justify-content: space-between;
 }
 
 .navheb
@@ -126,8 +127,9 @@ header
     .saut:hover
     {
         color: #0065FC;
-        border-top: 3px solid #0065FC;     
+        border-top: 3px solid #0065FC;      
     }
+    
 }
 
 /* section : trouv_vacances */
@@ -268,12 +270,12 @@ header
     margin-right: 1rem;
 }
 
- .choix_filtre:hover
-    {
-        box-shadow: inset 220px 0  #DEEBFF;
-        color: #0065FC;
-        border: 2px solid #DEEBFF;
-    }
+.choix_filtre:hover
+{
+    box-shadow: inset 220px 0  #DEEBFF;
+    color: #0065FC;
+    border: 2px solid #DEEBFF;
+}
 
 /* Mobile */
 
@@ -311,6 +313,12 @@ header
         display: block;
         border-radius: 1rem;
         margin-left: -1rem;
+    }
+    
+    .cherche_marseille
+    {
+        border-top: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
     }
 
 }
